@@ -1,0 +1,216 @@
+
+
+/* General Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+/* Header with Background Image */
+header {
+    background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=1200');
+
+    background-size: cover;
+    background-position: center;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Hover Effect - Required */
+nav ul li a:hover {
+    background-color: #ff6b00;
+    color: white;
+
+}
+
+/* Sections */
+section {
+    background-color: white;
+    margin: 20px auto;
+    padding: 30px;
+    max-width: 1000px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}
+
+h2 {
+    color: #0a2540;
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 3px solid #ff6b00;
+    padding-bottom: 10px;
+}
+
+h3 {
+    color: #0a2540;
+    margin-bottom: 10px;
+}
+
+p {
+    margin-bottom: 12px;
+}
+
+/* Hero */
+.hero {
+    text-align: center;
+    background-color: #eef2f7;
+}
+
+.hero h2 {
+    border: none;
+}
+
+/* Buttons */
+.btn {
+
+    display: inline-block;
+    background-color: #0a2540;
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 10px 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn:hover {
+    background-color: #ff6b00;
+    transform: scale(1.05);
+}
+
+.cv-btn {
+    background-color: #ff6b00;
+
+}
+
+.cv-btn:hover {
+    background-color: #0a2540;
+}
+
+/* About */
+.about-container {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+   
+    object-fit: cover;
+}
+
+/* Skills - Flexbox Bonus */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.skill-card {
+    background-color: burlywood;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Projects - Flexbox Bonus */
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.project-card {
+    background-color: #fff8f0;
+    border: 1px solid #ffcc99;
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+/* Contact Form */
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+/* Footer */
+footer {
+    background-color: black;
+    color: white;
+
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+}
